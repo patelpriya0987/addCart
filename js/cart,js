@@ -1,0 +1,9 @@
+const getData = () => {
+    let Data = JSON.parse(localStorage.getItem("data"));
+
+    if(Data){
+        return Data;
+    }else{
+        return [];
+    }
+}
