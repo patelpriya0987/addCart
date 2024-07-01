@@ -1823,6 +1823,7 @@ const products =  [
         productElement.className = 'col-12 col-md-6 col-lg-4 mb-4';
         productElement.innerHTML = `
             <div class="card">
+              <img src="${product.thumbnail}" class="card-img-top" alt="${product.title}">
                 <div class="card-body">
                     <h5 class="card-title">${product.title}</h5>
                     <h4>price : $${product.price}</h4>
