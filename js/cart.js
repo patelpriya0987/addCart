@@ -44,8 +44,10 @@ const cartItems = document.getElementById('cart-items');
             const li = document.createElement('li');
             li.className = 'list-group-item d-flex justify-content-between align-items-center';
             li.innerHTML = `
+             <img src="${item.thumbnail}" alt="${item.title}" width="100">
                 ${item.title} - $${item.price.toFixed(2)}
                 <div>
+                   
                     <button class="btn btn-secondary btn-sm me-1 decrement-btn">-</button>
                     <span class="badge bg-primary rounded-pill">${item.quantity}</span>
                     <button class="btn btn-secondary btn-sm ms-1 increment-btn">+</button>
